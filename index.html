@@ -19,12 +19,36 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link id="theme-style-dark" rel="stylesheet" href="assets/css/dark-mode.css" />
 </head>
 
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+    <script>
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
     <header>
         <div class="container">
             <nav class="flex items-center justify-between">
@@ -38,6 +62,17 @@
                         <a href="#project">Project</a>
                         <a href="#certificate">Certificates</a>
                         <a href="#contactme">Contact me</a>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Others
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#publications">Publications</a>
+                            <a class="dropdown-item" href="#blogs">Blogs</a>
+                            <a class="dropdown-item" href="#articles">Articles</a>
+                            <a class="dropdown-item" href="#gallery">Gallery</a>
+                        </div>
                     </div>
                 </div>
                 <div class="right">
@@ -56,7 +91,7 @@
                         Constantly seeking to engage my knowledge to learn something useful and keep challenging myself to be a better performer in accordance to the company's requirements. Good and quick learner, flexible as per the needs.
                     </p>
                     <div>
-                        <a href="https://www.google.com/" target="_blank"><button class="btn btn-secondary">DOWLOAD
+                        <a href="https://www.google.com/" target="_blank"><button class="btn btn-primary">DOWLOAD
 								RESUME</button></a>
                     </div>
                 </div>
@@ -156,6 +191,216 @@
     <section class="services" id="certificate">
         <div class="container">
             <h1 class="section-heading">CERTIFICATES</h1>
+            <p></p>
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="overlay">
+                        <spam>A</spam>
+                        <a href="#">Click here</a><br />
+                    </div>
+                    <img src="assets/images/BG 1.jpg" />
+                </div>
+                <div class="card">
+                    <div class="overlay">
+                        <spam>B</spam>
+                        <a href="#">Click here</a>
+                    </div>
+                    <img src="assets/images/BG 2.jpg" />
+                </div>
+                <div class="card">
+                    <div class="overlay">
+                        <spam>C</spam>
+                        <a href="#">Click here</a>
+                    </div>
+                    <img src="assets/images/BG 4.jpg" />
+                </div>
+                <div class="card">
+                    <div class="overlay">
+                        <spam>D</spam>
+                        <a href="#">Click here</a>
+                    </div>
+                    <img src="assets/images/BG 3.jpg" />
+                </div>
+                <div class="card">
+                    <div class="overlay">
+                        <spam>E</spam>
+                        <a href="#">Click here</a>
+                    </div>
+                    <img src="assets/images/BG 1.jpg" />
+                </div>
+                <div class="card">
+                    <div class="overlay">
+                        <spam>F</spam>
+                        <a href="https://www.linkedin.com/in/sunilrajthota/">Click here</a>
+                    </div>
+                    <img src="assets/images/BG 2.jpg" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="work" id="publications">
+        <div class="container">
+            <h1 class="section-heading">PUBLICATIONS</h1>
+            <p>
+                Please check my GitHub and LinkedIn profiles for more information! :)
+            </p>
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="overlay">
+                        <spam>A</spam>
+                        <a href="#">Click here</a><br />
+                    </div>
+                    <img src="assets/images/BG 1.jpg" />
+                </div>
+                <div class="card">
+                    <div class="overlay">
+                        <spam>B</spam>
+                        <a href="#">Click here</a>
+                    </div>
+                    <img src="assets/images/BG 2.jpg" />
+                </div>
+                <div class="card">
+                    <div class="overlay">
+                        <spam>C</spam>
+                        <a href="#">Click here</a>
+                    </div>
+                    <img src="assets/images/BG 4.jpg" />
+                </div>
+                <div class="card">
+                    <div class="overlay">
+                        <spam>D</spam>
+                        <a href="#">Click here</a>
+                    </div>
+                    <img src="assets/images/BG 3.jpg" />
+                </div>
+                <div class="card">
+                    <div class="overlay">
+                        <spam>E</spam>
+                        <a href="#">Click here</a>
+                    </div>
+                    <img src="assets/images/BG 1.jpg" />
+                </div>
+                <div class="card">
+                    <div class="overlay">
+                        <spam>F</spam>
+                        <a href="https://www.linkedin.com/in/sunilrajthota/">Click here</a>
+                    </div>
+                    <img src="assets/images/BG 2.jpg" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="blogs">
+        <div class="container">
+            <h1 class="section-heading">BLOGS</h1>
+            <p></p>
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="overlay">
+                        <spam>A</spam>
+                        <a href="#">Click here</a><br />
+                    </div>
+                    <img src="assets/images/BG 1.jpg" />
+                </div>
+                <div class="card">
+                    <div class="overlay">
+                        <spam>B</spam>
+                        <a href="#">Click here</a>
+                    </div>
+                    <img src="assets/images/BG 2.jpg" />
+                </div>
+                <div class="card">
+                    <div class="overlay">
+                        <spam>C</spam>
+                        <a href="#">Click here</a>
+                    </div>
+                    <img src="assets/images/BG 4.jpg" />
+                </div>
+                <div class="card">
+                    <div class="overlay">
+                        <spam>D</spam>
+                        <a href="#">Click here</a>
+                    </div>
+                    <img src="assets/images/BG 3.jpg" />
+                </div>
+                <div class="card">
+                    <div class="overlay">
+                        <spam>E</spam>
+                        <a href="#">Click here</a>
+                    </div>
+                    <img src="assets/images/BG 1.jpg" />
+                </div>
+                <div class="card">
+                    <div class="overlay">
+                        <spam>F</spam>
+                        <a href="https://www.linkedin.com/in/sunilrajthota/">Click here</a>
+                    </div>
+                    <img src="assets/images/BG 2.jpg" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="work" id="articles">
+        <div class="container">
+            <h1 class="section-heading">ARTICLES</h1>
+            <p>
+                Please check my GitHub and LinkedIn profiles for more information! :)
+            </p>
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="overlay">
+                        <spam>A</spam>
+                        <a href="#">Click here</a><br />
+                    </div>
+                    <img src="assets/images/BG 1.jpg" />
+                </div>
+                <div class="card">
+                    <div class="overlay">
+                        <spam>B</spam>
+                        <a href="#">Click here</a>
+                    </div>
+                    <img src="assets/images/BG 2.jpg" />
+                </div>
+                <div class="card">
+                    <div class="overlay">
+                        <spam>C</spam>
+                        <a href="#">Click here</a>
+                    </div>
+                    <img src="assets/images/BG 4.jpg" />
+                </div>
+                <div class="card">
+                    <div class="overlay">
+                        <spam>D</spam>
+                        <a href="#">Click here</a>
+                    </div>
+                    <img src="assets/images/BG 3.jpg" />
+                </div>
+                <div class="card">
+                    <div class="overlay">
+                        <spam>E</spam>
+                        <a href="#">Click here</a>
+                    </div>
+                    <img src="assets/images/BG 1.jpg" />
+                </div>
+                <div class="card">
+                    <div class="overlay">
+                        <spam>F</spam>
+                        <a href="https://www.linkedin.com/in/sunilrajthota/">Click here</a>
+                    </div>
+                    <img src="assets/images/BG 2.jpg" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="gallery">
+        <div class="container">
+            <h1 class="section-heading">GALLERY</h1>
             <p></p>
             <div class="card-wrapper">
                 <div class="card">
