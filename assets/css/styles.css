@@ -84,7 +84,7 @@ header nav .branding {
 }
 
 .hero .right h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 100;
     line-height: 1.2;
     margin-bottom: 2rem;
@@ -104,7 +104,8 @@ header nav .branding {
 }
 
 section {
-    padding: 4rem 0;
+    padding: 3rem 0;
+    padding-bottom: 8rem;
 }
 
 
@@ -164,40 +165,40 @@ section.about .social a img {
 }
 
 .section-heading {
-    color: var(--dark);
+    color: var(--primary);
     text-align: center;
     margin-bottom: 1rem;
     line-height: 0.5;
 }
 
-.section-heading spam {
+.section-heading span {
     color: var(--primary);
 }
 
 .section-heading+p {
     color: var(--ternary);
     font-family: 'Lato', sans-serif;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     text-align: center;
 }
 
 
-/*_________________________________services__________________________________________*/
+/*_________________________________cert__________________________________________*/
 
 
 /* 
-section.services {
+section.cert {
     background: var(--secondary);
 }
 
-section.services .card-wrapper {
+section.cert .card-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 2rem;
     grid-row-gap: 6rem;
 }
 
-section.services .card-wrapper .card {
+section.cert .card-wrapper .card {
     background: var(--secondary);
     padding: 3rem 2rem;
     position: relative;
@@ -206,58 +207,59 @@ section.services .card-wrapper .card {
     transition: all .3s;
 }
 
-section.services .card-wrapper .card img {
+section.cert .card-wrapper .card img {
     position: absolute;
     top: -3.5rem;
     left: 50%;
     transform: translateX(-50%);
 }
 
-section.services .card-wrapper .card h2 {
+section.cert .card-wrapper .card h2 {
     font-weight: 400;
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
 
-section.services .card-wrapper .card p {
+section.cert .card-wrapper .card p {
     font-family: 'Lato', sans-serif;
     color: var(--ternary);
     line-height: 1.6;
 }
 
-section.services .card-wrapper .card:hover {
+section.cert .card-wrapper .card:hover {
     background: var(--dark);
 }
 
-section.services .card-wrapper .card:hover h2,
-section.services .card-wrapper .card:hover p {
+section.cert .card-wrapper .card:hover h2,
+section.cert .card-wrapper .card:hover p {
     color: var(--pure);
 }
  */
 
-section.services {
-    background: var(--webkit-font-smotthing)
+section.cert {
+    background: var(--pure)
 }
 
-section.services .card-wrapper {
+section.cert .card-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
+    column-gap: 3rem;
+    row-gap: 6rem;
 }
 
-section.services .card-wrapper .card {
+section.cert .card-wrapper .card {
     position: relative;
     height: 250px;
     border: none;
 }
 
-section.services .card-wrapper .card .overlay {
+section.cert .card-wrapper .card .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--secondary);
+    background: var(--primary);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -267,22 +269,30 @@ section.services .card-wrapper .card .overlay {
     transition: all .3s ease;
 }
 
-section.services .card-wrapper .card:hover .overlay {
+section.cert .card-wrapper .card:hover .overlay {
     opacity: 1;
 }
 
-section.services .card-wrapper .card .overlay a {
-    color: var(--primary);
+section.cert .card-wrapper .card .overlay a {
+    color: black;
     text-decoration: none;
+    font-size: large;
 }
 
-section.services .card-wrapper .card img {
+section.cert .card-wrapper .card .overlay span {
+    color: var(--pure);
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+section.cert .card-wrapper .card img {
     height: 100%;
     width: 100%;
 }
 
-section.services .section-heading {
-    color: var(--pure) !important;
+section.cert .section-heading {
+    color: var(--primary) !important;
     text-align: center;
     margin-bottom: 1rem;
     line-height: 0.5;
@@ -311,31 +321,32 @@ section.freelancer p {
 }
 
 
-/*_________________________________Work__________________________________________*/
+/*_________________________________pro__________________________________________*/
 
-section.work {
-    background: var(--pure)
+section.pro {
+    background: var(--webkit-font-smotthing);
 }
 
-section.work .card-wrapper {
+section.pro .card-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
+    column-gap: 3rem;
+    row-gap: 6rem;
 }
 
-section.work .card-wrapper .card {
+section.pro .card-wrapper .card {
     position: relative;
     height: 250px;
     border: none;
 }
 
-section.work .card-wrapper .card .overlay {
+section.pro .card-wrapper .card .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(61, 207, 211, 0.9);
+    background: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -345,16 +356,89 @@ section.work .card-wrapper .card .overlay {
     transition: all .3s ease;
 }
 
-section.work .card-wrapper .card:hover .overlay {
+section.pro .card-wrapper .card:hover .overlay {
     opacity: 1;
 }
 
-section.work .card-wrapper .card .overlay a {
-    color: var(--secondary);
+section.pro .card-wrapper .card .overlay a {
+    color: darkviolet;
     text-decoration: none;
+    font-weight: bold;
 }
 
-section.work .card-wrapper .card img {
+section.pro .card-wrapper .card .overlay span {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+}
+
+section.pro .card-wrapper .card img {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Blogs */
+
+section.about {
+    padding-bottom: 3rem !important;
+}
+
+section.blogs {
+    background: var(--webkit-font-smotthing);
+    padding-bottom: 0rem !important;
+}
+
+section.blogs .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+    row-gap: 3rem;
+}
+
+section.blogs .card-wrapper .card {
+    position: relative;
+    height: 250px;
+    border: none;
+}
+
+section.blogs .card-wrapper .card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    columns: var(--light);
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+section.blogs .card-wrapper .card:hover .overlay {
+    opacity: 1;
+}
+
+section.blogs .card-wrapper .card .overlay a {
+    color: darkviolet;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section.blogs .card-wrapper .card .overlay span {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+}
+
+section.blogs .card-wrapper .card img {
     height: 100%;
     width: 100%;
 }
@@ -463,4 +547,37 @@ section.contactme {
 
 #myBtn:hover {
     background-color: var(--dark);
+}
+
+.card-link {
+    font-weight: bolder !important;
+    margin-top: 5px;
+    color: white !important;
+}
+
+.card-title {
+    margin-left: -20px;
+}
+
+.card-body {
+    background: var(--primary);
+    padding-bottom: 3rem !important;
+    margin-top: 5px;
+    color: white;
+    padding-top: 0px !important;
+    border-radius: 1rem !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    width: 100% !important;
+    height: 12rem !important;
+    background-color: transparent !important;
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    height: 12rem !important;
 }
